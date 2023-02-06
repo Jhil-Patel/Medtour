@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedTour</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">THE HAWKS</div>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+          <ul>
+            <li>
+              <a href="" class="active">Home</a>
+            </li>
+            <li> 
+              <a href="#Aboutus">About us</a>
+            <li>
+            <li> 
+              <a href="#">Login</a>
+            <li>
+            
+          </ul>
+        </nav>
+      </header>
+
+      <div class="con1">Hello1</div>
+      <div class="con1">Hello1</div>
+      <div class="con1">Hello1</div>
+      <div class="con1">Hello1</div>
+      <div class="aboutus" id="Aboutus">
+        About Us
+      </div>
+      <script>
+        hamburger = document.querySelector(".hamburger");
+  
+        hamburger.onclick = function () {
+          navBar = document.querySelector(".nav-bar");
+          navBar.classList.toggle("active")
+        };
+      </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
