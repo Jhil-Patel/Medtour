@@ -20,11 +20,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 0 50px;
 }
 .logo{
     cursor: pointer;
-    font-size: 28px;
+    font-size: 35px;
     font-weight: bold;
     color: white;
     transition: 0.4s ease;
@@ -44,18 +44,23 @@ header{
 .nav-bar ul li a{
     display: block;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     padding: 10px 25px;
-    /* border-radius: 50px; */
-    transition: 0.4s ease;
+     /* border-radius: 50px; */
+    /* transition: 0.4s ease; */
     margin: 0 5px;
 }
 .nav-bar ul li a:hover{
-    transform: scale(1.1);
+    background-color: white;
+    border-radius: 50px;
+    color: rgb(19, 102, 130);
+    transition: 0.1s;
+    /* transform: scale(1.1); */
 }
 .nav-bar ul li a.active{
-    border-bottom: 2px solid;
-    border-radius: 3px;
+    /* border-bottom: 2px solid; */
+    border-radius: 50px;
+    transition: 0.15s;
 }
 @media only screen and (max-width: 1320px){
     header{
@@ -85,7 +90,7 @@ header{
         left: 0;
         right: 0;
         width: 100%;
-        background: rgba(0,0,0,0.5);
+        background: rgb(88, 198, 235);
         transition: 0.5s ease;
         overflow: hidden;
     }
@@ -108,12 +113,9 @@ header{
     }
 }
 
-/* practice */
+/* practice
 .con1{
     width: 100vw;
     height: 700px;
     background-color: green;
 }
-/* .aboutus{
-
-} */
