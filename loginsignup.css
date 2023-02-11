@@ -115,10 +115,66 @@ header{
         margin-bottom: 12px;
     }
 }
+/* login form css */
 
-/* practice
-.con1{
-    width: 100vw;
-    height: 700px;
-    background-color: green;
+.login-container{
+    width: 100%;
+    background-color:none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.login-box{
+    background-color: white;
+    width: 350px;
+    text-align: center;
+    padding: 16px;
+    margin-top: 100px;
+}
+
+.login-top-text{
+    width: 100%;
+    padding: 16px;
+   margin-bottom: 16px;
+}
+.login-top-text p{
+    font-size: 24px;
+}
+
+.login-form{
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.login-input-field{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: rgba(0, 0, 255, 0.529);
+    backdrop-filter: blur(3px);
+    border-radius: 50px;
+    margin-bottom: 8px;
+    outline: none;
+}
+
+.login-btn{
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+.log-btn{
+    width: 70px;
+    height: 30px;
+    border: none;
+    background-color:  rgba(0, 0, 255, 0.529);
+    border-radius: 4px;
+}
+
+.signup-text{
+    color: black;
+    text-decoration: underline;
 }
