@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url();
+    background-image: url(web.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -126,11 +126,12 @@ header{
 }
 
 .login-box{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 350px;
     text-align: center;
     padding: 16px;
     margin-top: 100px;
+    border-color: blue;
 }
 
 .login-top-text{
@@ -139,7 +140,7 @@ header{
    margin-bottom: 16px;
 }
 .login-top-text p{
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .login-form{
@@ -152,7 +153,8 @@ header{
     width: 100%;
     padding: 8px;
     border: none;
-    background-color: rgba(0, 0, 255, 0.529);
+    height: 40px;
+    background-color: rgba(65, 205, 244, 0.529);
     backdrop-filter: blur(3px);
     border-radius: 50px;
     margin-bottom: 8px;
@@ -167,11 +169,12 @@ header{
     margin-bottom: 8px;
 }
 .log-btn{
-    width: 70px;
-    height: 30px;
+    width: 80px;
+    height: 40px;
     border: none;
-    background-color:  rgba(0, 0, 255, 0.529);
+    background-color:  rgba(10, 183, 231, 0.529);
     border-radius: 4px;
+    font-size: 20px;
 }
 
 .signup-text{

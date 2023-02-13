@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MedTour-Login</title>
     <link rel="stylesheet" href="loginsignup.css">
 </head>
 <body>
@@ -36,11 +36,11 @@
     <div class="login-container" id="login-container">
       <div class="login-box">
         <div class="login-top-text">
-          <p>login</p>
+          <p>Login</p>
         </div>
         <div class="login-form">
           <form action="" id="log-form">
-            <input type="email" class="login-input-field" id="login-input-field" placeholder="Enter Your Email" name="email" id="login_email" required><br>
+            <input type="email" class="login-input-field" id="login-input-field" placeholder="Username/Email" name="email" id="login_email" required><br>
             <input type="password" class="login-input-field" id="login-input-field1" placeholder="Password" name="email" id="login_email" required>
           </form>
         </div>
@@ -48,7 +48,7 @@
           <button class="log-btn">Login</button>
         </div>
         <div class="login-bottom-text">
-          Don't Have An Account! <a href="#" class="signup-text">Sign Up</a>
+          Don't have an Account! <a href="#" class="signup-text">Let's Create</a>
         </div>
       </div>
     </div>
@@ -63,15 +63,15 @@
           navBar = document.querySelector(".nav-bar");
           if(navBar.classList.contains("active")){
             navBar.classList.remove("active");
-            logincont.style.zIndex = '0';
-            loginform.style.zIndex = '0';
-            loginpfield.style.zIndex = '0';
-            loginpfield1.style.zIndex = '0';
+            logincont.style.zIndex = '-1';
+      //     //   // loginform.style.zIndex = '1';
+      //     //   // loginpfield.style.zIndex = '1';
+      //     //   // loginpfield1.style.zIndex = '0';
           }else{
             logincont.style.zIndex = '-1';
-            loginform.style.zIndex = '-1';
-            loginpfield.style.zIndex = '-1';
-            loginpfield1.style.zIndex = '-1';
+      //       // loginform.style.zIndex = '1';
+      //       // loginpfield.style.zIndex = '0';
+      //       // loginpfield1.style.zIndex = '0';
             navBar.classList.add("active");
           }
           
