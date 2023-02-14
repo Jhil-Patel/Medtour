@@ -24,7 +24,7 @@ header{
 }
 .logo{
     cursor: pointer;
-    font-size: 27px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
     transition: 0.4s ease;
@@ -169,11 +169,11 @@ header{
     margin-bottom: 8px;
 }
 .log-btn{
-    width: 80px;
+    width: 100px;
     height: 40px;
     border: none;
     background-color:  rgba(10, 183, 231, 0.529);
-    border-radius: 4px;
+    border-radius: 8px;
     font-size: 20px;
 }
 
