@@ -63,15 +63,15 @@
           navBar = document.querySelector(".nav-bar");
           if(navBar.classList.contains("active")){
             navBar.classList.remove("active");
-            logincont.style.zIndex = '-1';
-      //     //   // loginform.style.zIndex = '1';
-      //     //   // loginpfield.style.zIndex = '1';
+            logincont.style.zIndex = '0';
+      //     //   // loginform.style.zIndex = '0';
+      //     //   // loginpfield.style.zIndex = '0';
       //     //   // loginpfield1.style.zIndex = '0';
           }else{
             logincont.style.zIndex = '-1';
-      //       // loginform.style.zIndex = '1';
-      //       // loginpfield.style.zIndex = '0';
-      //       // loginpfield1.style.zIndex = '0';
+      //       // loginform.style.zIndex = '-1';
+      //       // loginpfield.style.zIndex = '-1';
+      //       // loginpfield1.style.zIndex = '-1';
             navBar.classList.add("active");
           }
           
