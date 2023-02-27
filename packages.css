@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(web.jpg);
+    background-image: url();
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -115,71 +115,14 @@ header{
         margin-bottom: 12px;
     }
 }
-/* login form css */
 
-.login-container{
-    width: 100%;
-    background-color:none;
-    display: flex;
-    justify-content: center;
-    position: relative;
+.pkg{
+    background-color: rgb(24, 170, 170);
+    width: 400px;
+    height: 500px;
 }
-
-.login-box{
-    background-color: rgb(255, 255, 255);
-    width: 350px;
-    text-align: center;
-    padding: 16px;
-    margin-top: 100px;
-    border-color: blue;
-}
-
-.login-top-text{
-    width: 100%;
-    padding: 16px;
-   margin-bottom: 16px;
-}
-.login-top-text p{
-    font-size: 30px;
-}
-
-.login-form{
-    width: 100%;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-.login-input-field{
-    width: 100%;
-    padding: 8px;
-    border: none;
-    height: 40px;
-    background-color: rgba(90, 199, 236, 0.529);
-    /* background-color: rgba(65, 205, 244, 0.529); */
-    backdrop-filter: blur(3px);
-    border-radius: 50px;
-    margin-bottom: 8px;
-    outline: none;
-    font-size: 15px;
-}
-
-.login-btn{
-    width: 100%;
-    padding: 8px;
-    text-align: center;
-    margin-top: 16px;
-    margin-bottom: 8px;
-}
-.log-btn{
-    width: 100px;
-    height: 40px;
-    border: none;
-    background-color:  rgba(10, 183, 231, 0.529);
-    border-radius: 8px;
-    font-size: 20px;
-}
-
-.signup-text{
-    color: black;
-    text-decoration: underline;
+.wishlist{
+    background-color: blue;
+    width: 400px;
+    margin-left: 300px;
 }
