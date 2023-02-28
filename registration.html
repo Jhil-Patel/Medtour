@@ -6,6 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp</title>
     <link rel="stylesheet" type="text/css" href="loginsignup.css">
+
+    <script type="text/javascript">
+      function validate()
+      {
+        var uphone=document.registration.phone.value;
+        //document.print(uphone);
+        var upswd=document.registration.pswd.value;
+        //var uname=/^[a-zA-Z ]*$/;
+       
+        //var unm=document.registration.nm.value.match(nm);
+        //var fnm=document.registration.fname.value.match(fname);
+        
+        if(upswd.length<6)
+        {
+            alert("Length of password is atleast 6 characters!");
+            document.registration.pswd.focus();
+            return false;
+        }
+
+        if(uphone.length<10)
+        {
+            alert("Please Enter Mobile Number in at least 10 digits");
+            document.registration.phone.focus();
+            return false;
+            
+        }
+                
+      }
+    </script>
+    
 </head>
 <body>
     <header>
@@ -38,22 +68,32 @@
         <div class="login-top-text">
           <p>Register</p>
         </div>
-        <div class="login-form">
-          <form action="" id="log-form">
-            <input type="text" class="login-input-field" id="login-input-field1" placeholder="UserType" name="add" id="login_email" required><br>
-            <input type="text" class="login-input-field" id="login-input-field1" placeholder="Name" name="add" id="login_email" required><br>
-            <input type="password" class="login-input-field" id="login-input-field" placeholder="Password" name="email" id="login_email" required><br>
-            <input type="password" class="login-input-field" id="login-input-field1" placeholder="Password" name="pass" id="login_email" required><br>
-            <input type="password" class="login-input-field" id="login-input-field1" placeholder="Confirm Password" name="conpass" id="login_email" required><br>
-            <input type="number" class="login-input-field" id="login-input-field1" placeholder="Mobile no." name="num" id="login_email" required><br>
-            <input type="text" class="login-input-field" id="login-input-field1" placeholder="Address" name="add" id="login_email" required><br>
-            <input type="text" class="login-input-field" id="login-input-field1" placeholder="Security Question" name="add" id="login_email" required><br>
-            <input type="text" class="login-input-field" id="login-input-field1" placeholder="Security Answer" name="add" id="login_email" required><br>
-          </form>
+        <form action="registration.php" method="post">
+          <div class="login-form">          
+            <select name="category" class="login-input-field">
+              <option class="option">User</option>
+              <option class="option">Admin</option>
+              <option class="option">Staff</option>
+            </select><br>
+            <input type="text" class="login-input-field" placeholder="Username" name="nm" required><br>
+            <input type="password" class="login-input-field" placeholder="Password" name="pswd" required><br>
+            <input type="text" class="login-input-field" placeholder="Full Name" name="fname" required><br>
+            <input type="text" class="login-input-field" placeholder="Address" name="addr" required><br>
+            <input type="email" class="login-input-field" placeholder="Email id" name="email" required><br>
+            <input type="number" class="login-input-field" placeholder="Phone no." name="phone" required><br>
+            <select name="secque" class="login-input-field">
+              <option>What is your Teacher's name? </option>
+              <option>What is your favourite food?</option>
+              <option>What song is your favourite?</option>
+              <option>What is your favourite movie?</option>
+              <option>What is your Zodiac sign</option>
+              </select>
+            <input type="text" class="login-input-field" placeholder="Security Answer" name="secans" required><br>
         </div>
         <div class="login-btn">
-          <button class="log-btn">Register</button>
+          <input type="submit" name="insert" value="Register" class="log-btn">
         </div>
+      </form>
         <div class="login-bottom-text">
           Already have an Account! <a href="login.html" class="signup-text">Login</a>
         </div>
