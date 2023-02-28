@@ -25,8 +25,7 @@ if(isset($_POST['insert']))
     if(mysqli_query($conn,$sql))
     {
         echo "Insert Sucessful..!!!";
-        header('Location:home.html');
-        
+        // header('Location:home.html');        
     }
     else
     {
