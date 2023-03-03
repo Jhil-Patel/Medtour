@@ -11,6 +11,10 @@
     <form action="" method="POST">
     <table>
         <tr>
+            <td>Hospital Code :</td>
+            <td><input type="text" name="Hospital Code"></td>
+        </tr>
+        <tr>
             <td>Hospital Name :</td>
             <td><input type="text" name="hname" placeholder="Hospital Name" required></td>
         </tr>
@@ -20,11 +24,14 @@
         </tr>
         <tr>
             <td>Contact No. :</td>
-            <td><input type="number" name="hcont" placeholder="Contact No." required></td>
+            <td><input type="number" name="hcont" placeholder="Contact No." minlength="10" required></td>
         </tr>
         <tr>
             <td>Facilities :</td>
-            <td><input type="radio" name="fac" required> </td>
+            <td><input type="checkbox" name="fac" value="private rooms">Private Rooms</td>
+            <td><input type="checkbox" name="fac" value="cafeteria">Cafeteria/Restaurant</td>
+
+
         </tr>
         <tr>
             <td>Contact Person :</td>
