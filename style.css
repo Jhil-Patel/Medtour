@@ -121,7 +121,7 @@ header{
     background-image: url(homediv1.jpg);
     width: 100vw;
     height: 300px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .hd2{
