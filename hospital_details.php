@@ -24,11 +24,11 @@ if(isset($_POST['insert']))
     
     if(mysqli_query($con,$sql))
     {
-        echo '<script>alert("Insert Successful")</script>';     
+        echo 'Insert Successful';     
     }
     else
     {
-        echo '<script>("Insert Unsuccessful")</script>';
+        echo 'Insert Unsuccessful';
     }
     
 }
