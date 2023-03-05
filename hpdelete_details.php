@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Details-Edit Details</title>
+    <title>Hospital Details-Delete Details</title>
 </head>
 
 <body>
-    <form method="Post" action="hpupdate_details.php">
+    <form method="Post" action="hpsave_details.php">
 
         <table align="center" cellpadding="10" bgcolor="white" style="border:1px solid black" bordercolor="#D7DF01">
 
@@ -134,7 +134,7 @@
 
             <tr>
                 <td colspan="2" align="center">
-                    <input type="submit" name="submit" value="Submit" />
+                    <input type="submit" name="delete" value="Delete" />
                 </td>
             </tr>
 

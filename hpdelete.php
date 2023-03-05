@@ -55,7 +55,7 @@
                 <td><?php echo $DB_fac; ?></td>
                 <td><?php echo $DB_hcontnm; ?></td>
                 <td><?php echo $DB_hcontper; ?></td>
-                <td><a href="hpedit_details.php?HName=<?php echo $DB_hname; ?>">Edit</a></td>
+                <td><a href="hpdelete_details.php?HName=<?php echo $DB_hname; ?>">Delete</a></td>
             </tr>
 
         <?php

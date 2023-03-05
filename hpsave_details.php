@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST['submit'])) {
+if (isset($_POST['delete'])) {
     $hcode = $_POST['hcode'];
     $hname = $_POST['hname'];
     $haddr = $_POST['haddr'];
@@ -11,20 +11,19 @@ if (isset($_POST['submit'])) {
     $hcontnm = $_POST['hcontnm'];
     $hcontper = $_POST['hcontper'];
 
-    echo $hcode, $hname, $hcont, $hfacs;
+    // echo $hcode, $hname, $hcont, $hfacs;
 
     $con = mysql_connect("localhost", "root", "");
     if ($con) {
         echo "Connected to MySQL" . "<br/>";
     }
     mysql_select_db("medtour");
-    $sql = "UPDATE `hospital details` SET `HCode`='$hcode',`HName`='$hname',`HAddr`='$haddr',`HCountry`='$hcountry',`HCont`='$hcont',`HFac`='$hfacs',`HContPName`='$hcontnm',`HContPer`='$hcontper' where HCode='$hcode'";
+    $sql = "DELETE FROM `hospital details` WHERE HCode='$hcode'";
     if (mysql_query($sql, $con)) {
-
-        echo 'Record Updated Successfully';
+        echo 'Record Deleted Successfully';
     } else {
-        echo 'Record Not Updated Successfully';
+        echo 'Record Not Deleted Successfully';
     }
 }
 mysql_close($con);
-header("location:hpedit.php");
+header("location:hpdelete.php");

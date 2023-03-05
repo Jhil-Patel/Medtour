@@ -1,81 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedTour-Login</title>
-    <link rel="stylesheet" href="loginsignup.css">
-</head>
-<body>
-    <header>
-        <div class="logo">MedTour</div>
-        <div class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-        <nav class="nav-bar">
-          <ul>
-            <li>
-              <a href="home.html">Home</a>
-            </li>
-            <li> 
-              <a href="#">About us</a>
-            </li>
-            <li> 
-              <a href="packages.html">Packages</a>
-            </li>
-            <li> 
-              <a href="#" class="active">Login</a>
-            </li> 
-          </ul>
-        </nav>
-    </header>
 
-    <div class="login-container" id="login-container">
-      <div class="login-box">
-        <div class="login-top-text">
-          <p>Login</p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedTour-Login</title>
+  <link rel="stylesheet" href="loginsignup.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">MedTour</div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+        <li>
+          <a href="#">About us</a>
+        </li>
+        <li>
+          <a href="packages.html">Packages</a>
+        </li>
+        <li>
+          <a href="#" class="active">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="login-container" id="login-container">
+    <div class="login-box">
+      <div class="login-top-text">
+        <p>Login</p>
+      </div>
+      <form action="login.php" id="log-form">
+        <div class="login-form">
+          <input type="email" class="login-input-field" placeholder="Username" name="uname" required><br>
+          <input type="password" class="login-input-field" placeholder="Password" name="pass" required>
         </div>
-        <form action="login.php" id="log-form">
-          <div class="login-form">          
-            <input type="email" class="login-input-field" placeholder="Username" name="uname" required><br>
-            <input type="password" class="login-input-field" placeholder="Password" name="pass" required>
-          </div>
-          <div class="login-btn">
-            <input type="submit" name="insert" value="Login" class="log-btn">
-          </div>
-        </form>
-        <div class="login-bottom-text">
-          Don't have an Account! <a href="registration.html" class="signup-text">Let's Create</a>
+        <div class="login-btn">
+          <input type="submit" name="insert" value="Login" class="log-btn">
         </div>
+      </form>
+      <div class="login-bottom-text">
+        Don't have an Account! <a href="registration.html" class="signup-text">Let's Create</a>
       </div>
     </div>
+  </div>
 
-    <script>
-      hamburger = document.querySelector(".hamburger");
-      let logincont = document.getElementById("login-container");
-      let loginform = document.getElementById("log-form");
-      let loginpfield = document.getElementById("login-input-field");
-      let loginpfield1 = document.getElementById("login-input-field1");
-      hamburger.onclick = function(){
-          navBar = document.querySelector(".nav-bar");
-          if(navBar.classList.contains("active")){
-            navBar.classList.remove("active");
-            logincont.style.zIndex = '0';
-      //     //   // loginform.style.zIndex = '0';
-      //     //   // loginpfield.style.zIndex = '0';
-      //     //   // loginpfield1.style.zIndex = '0';
-          }else{
-            logincont.style.zIndex = '-1';
-      //       // loginform.style.zIndex = '-1';
-      //       // loginpfield.style.zIndex = '-1';
-      //       // loginpfield1.style.zIndex = '-1';
-            navBar.classList.add("active");
-          }
-          
-        };
-    </script>
+  <script>
+    hamburger = document.querySelector(".hamburger");
+    let logincont = document.getElementById("login-container");
+    let loginform = document.getElementById("log-form");
+    let loginpfield = document.getElementById("login-input-field");
+    let loginpfield1 = document.getElementById("login-input-field1");
+    hamburger.onclick = function () {
+      navBar = document.querySelector(".nav-bar");
+      if (navBar.classList.contains("active")) {
+        navBar.classList.remove("active");
+        logincont.style.zIndex = '0';
+        //     //   // loginform.style.zIndex = '0';
+        //     //   // loginpfield.style.zIndex = '0';
+        //     //   // loginpfield1.style.zIndex = '0';
+      } else {
+        logincont.style.zIndex = '-1';
+        //       // loginform.style.zIndex = '-1';
+        //       // loginpfield.style.zIndex = '-1';
+        //       // loginpfield1.style.zIndex = '-1';
+        navBar.classList.add("active");
+      }
+
+    };
+  </script>
 </body>
+
 </html>
