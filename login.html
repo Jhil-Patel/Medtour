@@ -40,10 +40,15 @@
       <div class="login-top-text">
         <p>Login</p>
       </div>
-      <form action="login.php" id="log-form">
+      <form action="login.php" id="log-form" method="POST">
         <div class="login-form">
-          <input type="email" class="login-input-field" placeholder="Username" name="uname" required><br>
-          <input type="password" class="login-input-field" placeholder="Password" name="pass" required>
+          <select name="category" class="login-input-field">
+            <option class="option">User</option>
+            <option class="option">Admin</option>
+            <option class="option">Staff</option>
+          </select><br>
+          <input type="text" class="login-input-field" placeholder="Username" name="nm" required><br>
+          <input type="password" class="login-input-field" placeholder="Password" name="pswd" required>
         </div>
         <div class="login-btn">
           <input type="submit" name="insert" value="Login" class="log-btn">

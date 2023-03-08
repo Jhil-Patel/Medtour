@@ -11,28 +11,38 @@
       function validate()
       {
         var uphone=document.registration.phone.value;
-        //document.print(uphone);
-        var upswd=document.registration.pswd.value;
-        //var uname=/^[a-zA-Z ]*$/;
+        var pswd=document.registration.pswd.value;
+        var uname=/^[a-zA-Z ]*$/;
        
-        //var unm=document.registration.nm.value.match(nm);
-        //var fnm=document.registration.fname.value.match(fname);
-        
-        if(upswd.length<6)
-        {
-            alert("Length of password is atleast 6 characters!");
-            document.registration.pswd.focus();
-            return false;
-        }
-
-        if(uphone.length<10)
+        var unm=document.registration.nm.value.match(nm);
+        var fnm=document.registration.fname.value.match(nm);
+        if(phone.length<10)
         {
             alert("Please Enter Mobile Number in at least 10 digits");
             document.registration.phone.focus();
             return false;
             
         }
-                
+        if(pswd.length<6)
+        {
+            alert("Length of password is atleast 6 characters!");
+            document.registration.pswd.focus();
+            return false;
+        }
+        if(nm==null)
+        {
+            alert("Please enter valid user name!");
+            document.registration.nm.focus();
+            return false;
+        }
+        
+        if(fname==null)
+        {
+            alert("Please enter valid full name!");
+            document.registration.fName.focus();
+            return false;
+        }
+        return (true);
       }
     </script>
     
